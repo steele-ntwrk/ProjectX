@@ -5,27 +5,20 @@ nav:
   - Home: index.md
 
   - System 1:
-      - System 1: System 1/System 1-detailed_design.md
+      
         - Security:
-            - Security: System 1/Security/Security-detailed_design.md
-              - MFA:
-                  - MFA: System 1/Security/MFA/MFA-detailed_design.md
-              - Component 1A-2:
-                  - Component 1A-2: System 1/Security/Component 1A-2/Component 1A-2-detailed_design.md
+            - Overview: System 1/Security/Security-detailed_design.md
+              - MFA: System 1/Security/MFA/MFA-detailed_design.md
+              - Component 1A-2: System 1/Security/Component 1A-2/Component 1A-2-detailed_design.md
         - Subsystem 1B:
-            - Subsystem 1B: System 1/Subsystem 1B/Subsystem 1B-detailed_design.md
-              - Component 1B-1:
-                  - Component 1B-1: System 1/Subsystem 1B/Component 1B-1/Component 1B-1-detailed_design.md
-              - Component 1B-2:
-                  - Component 1B-2: System 1/Subsystem 1B/Component 1B-2/Component 1B-2-detailed_design.md
-              - Component 1B-3:
-                  - Component 1B-3: System 1/Subsystem 1B/Component 1B-3/Component 1B-3-detailed_design.md
+            - Overview: System 1/Subsystem 1B/Subsystem 1B-detailed_design.md
+              - Component 1B-1: System 1/Subsystem 1B/Component 1B-1/Component 1B-1-detailed_design.md
+              - Component 1B-2: System 1/Subsystem 1B/Component 1B-2/Component 1B-2-detailed_design.md
+              - Component 1B-3: System 1/Subsystem 1B/Component 1B-3/Component 1B-3-detailed_design.md
         - Subsystem 1C:
-            - Subsystem 1C: System 1/Subsystem 1C/Subsystem 1C-detailed_design.md
-              - Component 1C-1:
-                  - Component 1C-1: System 1/Subsystem 1C/Component 1C-1/Component 1C-1-detailed_design.md
-              - Component 1C-2:
-                  - Component 1C-2: System 1/Subsystem 1C/Component 1C-2/Component 1C-2-detailed_design.md
+            - Overview: System 1/Subsystem 1C/Subsystem 1C-detailed_design.md
+              - Component 1C-1: System 1/Subsystem 1C/Component 1C-1/Component 1C-1-detailed_design.md
+              - Component 1C-2: System 1/Subsystem 1C/Component 1C-2/Component 1C-2-detailed_design.md
 
 
 - Requirements:
