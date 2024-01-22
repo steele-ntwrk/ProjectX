@@ -3,7 +3,7 @@ site_name: PLACEHOLDER
 site_url: http://192.168.40.99
 nav:
   - Home: index.md
-- System 1:
+  - System 1:
     - System 1: System 1/System 1-detailed_design.md
       - Security:
         - Security: System 1/Security/Security-detailed_design.md
