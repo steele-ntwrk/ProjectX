@@ -1,0 +1,48 @@
+
+site_name: PLACEHOLDER
+site_url: http://192.168.40.99
+nav:
+- Home: index.md
+- System 1:
+    - System 1: System 1/System 1-detailed_design.md
+      - Security:
+        - Security: System 1/Security/Security-detailed_design.md
+          - MFA:
+            - MFA: System 1/Security/MFA/MFA-detailed_design.md
+          - Component 1A-2:
+            - Component 1A-2: System 1/Security/Component 1A-2/Component 1A-2-detailed_design.md
+      - Subsystem 1B:
+        - Subsystem 1B: System 1/Subsystem 1B/Subsystem 1B-detailed_design.md
+          - Component 1B-1:
+            - Component 1B-1: System 1/Subsystem 1B/Component 1B-1/Component 1B-1-detailed_design.md
+          - Component 1B-2:
+            - Component 1B-2: System 1/Subsystem 1B/Component 1B-2/Component 1B-2-detailed_design.md
+          - Component 1B-3:
+            - Component 1B-3: System 1/Subsystem 1B/Component 1B-3/Component 1B-3-detailed_design.md
+      - Subsystem 1C:
+        - Subsystem 1C: System 1/Subsystem 1C/Subsystem 1C-detailed_design.md
+          - Component 1C-1:
+            - Component 1C-1: System 1/Subsystem 1C/Component 1C-1/Component 1C-1-detailed_design.md
+          - Component 1C-2:
+            - Component 1C-2: System 1/Subsystem 1C/Component 1C-2/Component 1C-2-detailed_design.md
+
+- Requirements:
+    - Functional Requirements:
+        - FR001 Description of functional requirement FR001.: requirements/functional/FR001.md
+    - Security Requirements:
+        - SR001 Description of security requirement SR001.: requirements/security/SR001.md
+        - SR002 Description of security requirement SR002.: requirements/security/SR002.md
+        - SR003 Description of security requirement SR002.: requirements/security/SR003.md
+
+theme:
+  name: material
+
+plugins:
+    - drawio-exporter:
+        drawio_executable: /usr/bin/drawio
+    - search
+    - macros
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
