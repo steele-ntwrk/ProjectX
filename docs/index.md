@@ -1,4 +1,4 @@
-# System of Systems Project
+# ProjectX
 
 ## Description
 
