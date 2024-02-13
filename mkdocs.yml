@@ -1,5 +1,5 @@
 
-site_name: PLACEHOLDER
+site_name: ProjectX
 site_url: http://192.168.40.99
 nav:
   - Home: index.md
