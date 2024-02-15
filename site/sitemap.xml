@@ -60,4 +60,24 @@
          <lastmod>2024-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>http://192.168.40.99/requirements/functional/FR001/</loc>
+         <lastmod>2024-02-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://192.168.40.99/requirements/security/SR001/</loc>
+         <lastmod>2024-02-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://192.168.40.99/requirements/security/SR002/</loc>
+         <lastmod>2024-02-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://192.168.40.99/requirements/security/SR003/</loc>
+         <lastmod>2024-02-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
