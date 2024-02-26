@@ -6,12 +6,27 @@ Classification:
 ---
 
 
-Template version {{ Version }}<br>
-Author: {{ Author }}<br>
-Classification: {{ Classification }}<br>
+Template version: {{ Template_Version }}<br>
+Document version: [Manually Insert]<br>
+Author: [Manually Insert]<br>
+Classification: [Manually Insert]<br>
 
 ![Company Logo](/common_images/companylogo.png)
 
+# System Detailed Design: [System Item Name]
+
+- **Date**: [Insert Date]
+- **Author**: [Insert Author]
+- **Version**: [Insert Document Version]
+
+## Revision History
+
+| Version | Date | Description | Author |
+| --- | --- | --- | --- |
+
+{% for commit in git.log %}
+| {{ commit.id[:7] }} | {{ commit.date }} | {{ commit.message }} | {{ commit.author }} |
+{% endfor %}
 
 # System Detailed Design: System 1
 
