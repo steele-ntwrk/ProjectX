@@ -22,6 +22,8 @@ Brief overview of the component.
 ## Design Specifications
 Details of the design specifications.
 
+### Functional Specifications
+
 ## Technical Details
 - Technical detail 1
 - Technical detail 2
