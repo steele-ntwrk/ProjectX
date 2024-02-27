@@ -22,7 +22,9 @@ Brief overview of the component.
 ## Design Specifications
 Details of the design specifications.
 
-### Functional Specifications - Second Test
+
+### Functional Specifications - Conflicting TEST
+
 
 ## Technical Details
 - Technical detail 1
