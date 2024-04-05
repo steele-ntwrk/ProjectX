@@ -4,7 +4,7 @@ import requests
 def define_env(env):
 
     # Define global variables
-    env.variables['netbox_url'] = 'http://192.168.40.163'
+    env.variables['netbox_url'] = 'https://192.168.40.163'
     env.variables['netbox_api_token'] = 'd9ad849f860d24b653c6a2072fff1afb3d8cf49f'
 
     # Define a macro to get VLANs for a given site
