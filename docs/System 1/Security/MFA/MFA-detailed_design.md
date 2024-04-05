@@ -25,7 +25,7 @@ Details of the design specifications.
 ### Functional Specifications - Second Test
 
 
-{% for vlan in get_vlans_for_site('Site Name') %}
+{% for vlan in get_vlans_for_site('site_name') %}
 - VLAN ID: {{ vlan.id }}, Name: {{ vlan.name }}, Description: {{ vlan.description | default('No description', true) }}
 {% endfor %}
 
