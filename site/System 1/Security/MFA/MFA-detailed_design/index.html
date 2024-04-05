@@ -1020,7 +1020,7 @@
 
 <h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
 <p><em>File</em>: <code>System 1/Security/MFA/MFA-detailed_design.md</code></p>
-<p><em>NameError</em>: name 'netbox_api_token' is not defined</p>
+<p><em>NameError</em>: name 'netbox_url' is not defined</p>
 <pre><code>Traceback (most recent call last):
   File &quot;/home/matts/ProjectX/venv/lib/python3.11/site-packages/mkdocs_macros/plugin.py&quot;, line 527, in render
     return md_template.render(**page_variables)
@@ -1030,10 +1030,10 @@
   File &quot;/home/matts/ProjectX/venv/lib/python3.11/site-packages/jinja2/environment.py&quot;, line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
   File &quot;&lt;template&gt;&quot;, line 26, in top-level template code
-  File &quot;/home/matts/ProjectX/main.py&quot;, line 43, in get_interfaces_for_site
-    'Authorization': f'Token {netbox_api_token}',
-                              ^^^^^^^^^^^^^^^^
-NameError: name 'netbox_api_token' is not defined
+  File &quot;/home/matts/ProjectX/main.py&quot;, line 47, in get_interfaces_for_site
+    f&quot;{netbox_url}/api/dcim/sites/?name={site_name}&quot;,
+      ^^^^^^^^^^
+NameError: name 'netbox_url' is not defined
 
 </code></pre>
 
