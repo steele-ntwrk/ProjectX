@@ -14,10 +14,10 @@ def define_env(env):
             'Authorization': f'Token {env.variables["netbox_api_token"]}',
             'Accept': 'application/json',
         }
-        sites_response = requests.get(f"{env.variables['netbox_url']}/api/dcim/sites/?name={site_name}", headers=headers)
+        sites_response = requests.get(f"{env.variables['netbox_url']}/api/dcim/sites/?name={site_name}", headers=headers, verify=False)
         site_id = sites_response.json()['results'][0]['id']
 
-        vlans_response = requests.get(f"{env.variables['netbox_url']}/api/ipam/vlans/?site_id={site_id}", headers=headers)
+        vlans_response = requests.get(f"{env.variables['netbox_url']}/api/ipam/vlans/?site_id={site_id}", headers=headers, verify=False)
         return vlans_response.json()['results']
                 # Placeholder data
         #return [
