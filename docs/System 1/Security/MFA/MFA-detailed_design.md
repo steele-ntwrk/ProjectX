@@ -30,6 +30,11 @@ Details of the design specifications.
 - VLAN ID: {{ vlan.vid }}, Name: {{ vlan.name }}, Description: {{ vlan.description | default('No description', true) }}
 {% endfor %}
 
+{% for interface in get_interfaces_for_site(site_name) %}
+
+{{ interface.id }}
+
+{% endfor %}
 
 ## Technical Details
 - Technical detail 1
