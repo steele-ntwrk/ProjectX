@@ -20,7 +20,7 @@ def define_env(env):
         vlans_response = requests.get(f"{env.variables['netbox_url']}/api/ipam/vlans/?site_id={site_id}", headers=headers, verify=False)
         return vlans_response.json()['results']
     @env.macro
-    def get_device_interface_details(netbox_url, api_token, device_id, headers):
+    def get_device_interface_details(netbox_url, netbox_api_token, device_id, headers):
         interfaces_response = requests.get(
             f"{netbox_url}/api/dcim/interfaces/?device_id={device_id}", 
             headers=headers, 
@@ -32,9 +32,9 @@ def define_env(env):
             print(f"Failed to fetch interfaces for device ID {device_id}. Status Code: {interfaces_response.status_code}")
             return []
     @env.macro
-    def get_interfaces_for_site(netbox_url, api_token, site_name):
+    def get_interfaces_for_site(netbox_url, netbox_api_token, site_name):
         headers = {
-            'Authorization': f'Token {api_token}',
+            'Authorization': f'Token {netbox_api_token}',
             'Accept': 'application/json',
         }
 
@@ -60,7 +60,7 @@ def define_env(env):
 
         all_interfaces = []
         for device in devices_response.json()['results']:
-            device_interfaces = get_device_interface_details(netbox_url, api_token, device['id'], headers)
+            device_interfaces = get_device_interface_details(netbox_url, netbox_api_token, device['id'], headers)
             all_interfaces.extend(device_interfaces)
 
         return all_interfaces
