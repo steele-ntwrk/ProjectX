@@ -22,6 +22,10 @@ def define_env(env):
 
     @env.macro
     def get_device_interface_details(device_id):
+        headers = {
+            'Authorization': f'Token {netbox_api_token}',
+            'Accept': 'application/json',
+        }
         interfaces_response = requests.get(
             f"{netbox_url}/api/dcim/interfaces/?device_id={device_id}", 
             headers=headers, 
