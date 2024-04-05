@@ -2,6 +2,7 @@
 Version: 1.0
 Author: Steele Network
 Classification: Unclassified
+site_name: TEST
 ---
 
 ![Company Logo](/common_images/companylogo.png)
