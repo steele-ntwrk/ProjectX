@@ -19,8 +19,9 @@ def define_env(env):
 
         vlans_response = requests.get(f"{env.variables['netbox_url']}/api/ipam/vlans/?site_id={site_id}", headers=headers, verify=False)
         return vlans_response.json()['results']
+
     @env.macro
-    def get_device_interface_details(netbox_url, netbox_api_token, device_id, headers):
+    def get_device_interface_details(device_id):
         interfaces_response = requests.get(
             f"{netbox_url}/api/dcim/interfaces/?device_id={device_id}", 
             headers=headers, 
@@ -31,8 +32,9 @@ def define_env(env):
         else:
             print(f"Failed to fetch interfaces for device ID {device_id}. Status Code: {interfaces_response.status_code}")
             return []
+
     @env.macro
-    def get_interfaces_for_site(netbox_url, netbox_api_token, site_name):
+    def get_interfaces_for_site(site_name):
         headers = {
             'Authorization': f'Token {netbox_api_token}',
             'Accept': 'application/json',
