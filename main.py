@@ -23,7 +23,7 @@ def define_env(env):
     @env.macro
     def get_device_interface_details(device_id):
         headers = {
-            'Authorization': f'Token {netbox_api_token}',
+            'Authorization': f'Token {env.variables["netbox_api_token"]',
             'Accept': 'application/json',
         }
         interfaces_response = requests.get(
@@ -40,7 +40,7 @@ def define_env(env):
     @env.macro
     def get_interfaces_for_site(site_name):
         headers = {
-            'Authorization': f'Token {netbox_api_token}',
+            'Authorization': f'Token {env.variables["netbox_api_token"]',
             'Accept': 'application/json',
         }
 
