@@ -1020,7 +1020,7 @@
 
 <h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
 <p><em>File</em>: <code>System 1/Security/MFA/MFA-detailed_design.md</code></p>
-<p><em>UndefinedError</em>: 'get_interfaces_for_site' is undefined</p>
+<p><em>TypeError</em>: define_env.<locals>.get_interfaces_for_site() missing 2 required positional arguments: 'api_token' and 'site_name'</p>
 <pre><code>Traceback (most recent call last):
   File &quot;/home/matts/ProjectX/venv/lib/python3.11/site-packages/mkdocs_macros/plugin.py&quot;, line 527, in render
     return md_template.render(**page_variables)
@@ -1030,10 +1030,7 @@
   File &quot;/home/matts/ProjectX/venv/lib/python3.11/site-packages/jinja2/environment.py&quot;, line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
   File &quot;&lt;template&gt;&quot;, line 26, in top-level template code
-  File &quot;/home/matts/ProjectX/venv/lib/python3.11/site-packages/jinja2/utils.py&quot;, line 83, in from_obj
-    if hasattr(obj, &quot;jinja_pass_arg&quot;):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-jinja2.exceptions.UndefinedError: 'get_interfaces_for_site' is undefined
+TypeError: define_env.&lt;locals&gt;.get_interfaces_for_site() missing 2 required positional arguments: 'api_token' and 'site_name'
 
 </code></pre>
 
