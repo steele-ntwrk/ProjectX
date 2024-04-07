@@ -27,7 +27,7 @@ def define_env(env):
             'Accept': 'application/json',
         }
         interfaces_response = requests.get(
-            f"{netbox_url}/api/dcim/interfaces/?device_id={device_id}", 
+            f"{env.variables['netbox_url']}/api/dcim/interfaces/?device_id={device_id}", 
             headers=headers, 
             verify=False
         )
@@ -43,8 +43,9 @@ def define_env(env):
             'Authorization': f'Token {env.variables["netbox_api_token"]}',
             'Accept': 'application/json',
         }
+        
         site_response = requests.get(
-            f"{netbox_url}/api/dcim/sites/?name={site_name}", 
+            f"{env.variables['netbox_url']}/api/dcim/sites/?name={site_name}", 
             headers=headers, 
             verify=False
         )
@@ -55,7 +56,7 @@ def define_env(env):
             return []
 
         devices_response = requests.get(
-            f"{netbox_url}/api/dcim/devices/?site_id={site_id}", 
+            f"{env.variables['netbox_url']}/api/dcim/devices/?site_id={site_id}", 
             headers=headers, 
             verify=False
         )
