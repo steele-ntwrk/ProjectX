@@ -30,15 +30,13 @@ Details of the design specifications.
 - VLAN ID: {{ vlan.vid }}, Name: {{ vlan.name }}, Description: {{ vlan.description | default('No description', true) }}
 {% endfor %}
 
-{% for interface in get_interfaces_for_site(site_name) %}
 
 | Interface ID | Device Name | Interface Name | Interface Type | Cable End |
 |--------------|-------------|----------------|----------------|-----------|
-{% for interface in get_interfaces_for_site(netbox_url, netbox_api_token, site_name) %}
+{% for interface in get_interfaces_for_site(site_name) %}
 | {{ interface.id }} | {{ interface.device.name }} | {{ interface.name }} | {{ interface.type.label }} | {{ interface.cable_end }} |
 {% endfor %}
 
-{% endfor %}
 
 ## Technical Details
 - Technical detail 1
