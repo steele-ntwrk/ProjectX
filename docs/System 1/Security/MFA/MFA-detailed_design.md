@@ -32,8 +32,10 @@ Details of the design specifications.
 
 {% for interface in get_interfaces_for_site(site_name) %}
 
-{{ interface.id }}
-
+| Interface ID | Device Name | Interface Name | Interface Type | Cable End |
+|--------------|-------------|----------------|----------------|-----------|
+{% for interface in get_interfaces_for_site(netbox_url, netbox_api_token, site_name) %}
+| {{ interface.id }} | {{ interface.device.name }} | {{ interface.name }} | {{ interface.type.label }} | {{ interface.cable_end }} |
 {% endfor %}
 
 ## Technical Details
