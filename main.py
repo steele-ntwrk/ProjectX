@@ -66,7 +66,7 @@ def define_env(env):
 
         all_interfaces = []
         for device in devices_response.json()['results']:
-            device_interfaces = get_device_interface_details(netbox_url, netbox_api_token, device['id'], headers)
+            device_interfaces = get_device_interface_details(env.variables.netbox_url, env.variables.netbox_api_token, device['id'], headers)
             all_interfaces.extend(device_interfaces)
 
         return all_interfaces
