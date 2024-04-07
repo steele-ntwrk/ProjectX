@@ -38,6 +38,8 @@ Details of the design specifications.
 | {{ interface.id }} | {{ interface.device.name }} | {{ interface.name }} | {{ interface.type.label }} | {{ interface.cable_end }} |
 {% endfor %}
 
+{% endfor %}
+
 ## Technical Details
 - Technical detail 1
 - Technical detail 2
